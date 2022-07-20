@@ -1,19 +1,22 @@
-MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const { extension } = require('mime');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
-
+// numatytisis konfiguracijos objektas
 module.exports = {
   mode: 'development',
   devtool: 'source-map',
+
   module: {
     rules: [
       {
         test: /\.css$/,
         exclude: /node_modules/,
-        // webpack skaito masyva nuo galo
+        // weback skaito masyva nuo galo
         use: [MiniCssExtractPlugin.loader, 'css-loader'],
       },
       {
-        test: /\.js$/,
+        // taikomes i failus su .js ir .jsx prievardziu
+        test: /\.jsx?$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
@@ -21,7 +24,12 @@ module.exports = {
       },
     ],
   },
+
   plugins: [new MiniCssExtractPlugin()],
+
+  resolve: {
+    extensions: ['.js', '.jsx'],
+  },
 
   devServer: {
     hot: true,
