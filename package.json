@@ -6,7 +6,8 @@
   "scripts": {
     "start": "webpack serve",
     "watch": "webpack --watch",
-    "build": "webpack"
+    "build": "webpack --mode=development",
+    "build:p": "webpack --mode=production"
   },
   "repository": {
     "type": "git",

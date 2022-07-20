@@ -1,1 +1,1 @@
-console.log("online"),console.log("num===",150);
+(()=>{console.log("online");const o={name:"John",age:34},n={...o,town:"London"};console.log("user===",o),console.log("userTown===",n)})();
