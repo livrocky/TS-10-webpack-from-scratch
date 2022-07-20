@@ -1,5 +1,5 @@
 {
-  "name": "ts-10-webpack-from-scratch",
+  "name": "ts-11-webpack-from-scratch",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -27,6 +27,7 @@
     "babel-loader": "^8.2.5",
     "css-loader": "^6.7.1",
     "mini-css-extract-plugin": "^2.6.1",
+    "ts-loader": "^9.3.1",
     "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^4.9.3"
   },

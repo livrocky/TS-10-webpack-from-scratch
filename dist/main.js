@@ -68,16 +68,21 @@ __webpack_require__.r(__webpack_exports__);
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
+var exports = __webpack_exports__;
 /*!**********************!*\
-  !*** ./src/index.js ***!
+  !*** ./src/index.ts ***!
   \**********************/
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _style_reset_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style/reset.css */ "./src/style/reset.css");
-/* harmony import */ var _style_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style/style.css */ "./src/style/style.css");
 
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+__webpack_require__(/*! ./style/reset.css */ "./src/style/reset.css");
+__webpack_require__(/*! ./style/style.css */ "./src/style/style.css");
+const n1 = 500;
+console.log('n1 ===', n1);
+const app = document.getElementById('app');
+if (app)
+    app.innerHTML = n1.toString();
 
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=main.js.map
