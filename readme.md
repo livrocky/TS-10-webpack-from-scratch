@@ -1,7 +1,21 @@
-# Webbpack
+# Webback
 
 ## steps
 
-1. 'npm init -y'
-2. 'npm i -D webpack-cli'
-3. Babel `npm i -D babel-loader @babel/core @babel/preset-env`
+0. `npm init -y`
+1. `npm git init`
+2. `npm i webpack webpack-cli -D`
+3. scripts
+
+```
+  "start": "webpack serve",
+  "watch": "webpack --watch",
+  "build": "webpack"
+```
+
+4. `npm run build`
+5. Babel `npm i -D babel-loader @babel/core @babel/preset-env`
+
+### Css
+
+1. `npm i -D css-loader mini-css-extract-plugin`

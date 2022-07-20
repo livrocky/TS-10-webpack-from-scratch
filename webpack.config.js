@@ -1,8 +1,19 @@
 const path = require('path');
-// numatytasis konfiguracijos objektas
+
 module.exports = {
   mode: 'development',
-  devtool: false,
+  devtool: 'source-map',
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+        },
+      },
+    ],
+  },
 
   devServer: {
     static: {
