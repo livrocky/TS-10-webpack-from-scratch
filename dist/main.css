@@ -1,0 +1,14 @@
+/*!***********************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/style/style.css ***!
+  \***********************************************************************/
+body {
+    margin: 0;
+    background-color: coral;
+}
+
+h1 {
+    font-weight: normal;
+    font-size: 3rem;
+}
+
+/*# sourceMappingURL=main.css.map*/

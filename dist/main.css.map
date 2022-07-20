@@ -1,0 +1,1 @@
+{"version":3,"file":"main.css","mappings":";;;AAAA;IACI,SAAS;IACT,uBAAuB;AAC3B;;AAEA;IACI,mBAAmB;IACnB,eAAe;AACnB,C","sources":["webpack://ts-10-webpack-from-scratch/./src/style/style.css"],"sourcesContent":["body {\n    margin: 0;\n    background-color: coral;\n}\n\nh1 {\n    font-weight: normal;\n    font-size: 3rem;\n}"],"names":[],"sourceRoot":""}
